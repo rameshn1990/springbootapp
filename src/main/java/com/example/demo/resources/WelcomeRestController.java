@@ -13,7 +13,7 @@ public class WelcomeRestController {
 
 	@ApiOperation(value = "Get Welcome Message For The Given Name ", response = String.class, tags = "getWelcomeNote")
 	@GetMapping("/{name}")
-	public String welcome(@PathVariable("name") String Hi name) {
+	public String welcome(@PathVariable("name") String name) {
 		return  name+", Welcome to RJIL Family...!!!";
 	}
 
