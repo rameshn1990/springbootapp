@@ -1,0 +1,10 @@
+mode: ContinuousDelivery
+branches: {
+   devlop:
+     regex: ^devlop?[/-]
+     source-branches: ['main','master']
+     tag: dev-{BranchName}
+}
+ignore:
+  sha: []
+merge-message-formats: {}
